@@ -39,13 +39,17 @@ html body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
   background-color: var(--background);
 }
-html body::-webkit-scrollbar {
+html body main {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+html body main::-webkit-scrollbar {
   display: none;
 }
-html body section {
+html body main section {
   min-height: 80vh;
   padding: 3rem 0rem;
 }

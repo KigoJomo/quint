@@ -10,8 +10,8 @@
   --h1: 3.75rem;
 }
 
-@media (max-width: 768px){
-  :root{
+@media (max-width: 768px) {
+  :root {
     --h1: 2.25rem;
   }
 }
@@ -42,15 +42,19 @@ html {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll;
-    &::-webkit-scrollbar {
-      display: none;
-    }
     background-color: var(--background);
 
-    section {
-      min-height: 80vh;
-      padding: 3rem 0rem;
+    main {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      width: 100%;
+      section {
+        min-height: 80vh;
+        padding: 3rem 0rem;
+      }
     }
   }
 }
@@ -92,15 +96,15 @@ img {
   animation-range: entry 0% cover 80%;
 }
 
-h1{
+h1 {
   font-size: var(--h1);
 }
 
-h2{
+h2 {
   font-size: calc(var(--h1) / 1.5);
 }
 
-h3{
+h3 {
   font-size: calc(var(--h1) / 1.5 / 1.5);
 }
 
